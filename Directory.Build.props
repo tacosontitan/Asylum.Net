@@ -71,7 +71,6 @@
             CS1591; <!-- Missing XML comments for publicly visible type or member -->
         </NoWarn>
         <IsPackable>false</IsPackable>
-        <IsTestProject>true</IsTestProject>
         <AssemblyVersion>1.0.0.0</AssemblyVersion>
     </PropertyGroup>
     
