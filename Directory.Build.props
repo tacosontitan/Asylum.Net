@@ -1,0 +1,59 @@
+<Project>
+
+    <PropertyGroup Label="General Project Details">
+        <TargetFrameworks>
+            net4.8;
+            net6.0;
+            net7.0;
+            net8.0;
+        </TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>true</ImplicitUsings>
+        <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+        
+        <Title>$(AssemblyName)</Title>
+        <Version>$(AssemblyVersion)</Version>
+        <FileVersion>$(AssemblyVersion)</FileVersion>
+        <PackageVersion>$(AssemblyVersion)</PackageVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Package Details">
+        <Description>A lightweight rescue plan for those impacted by the common pains of obfsucation.</Description>
+        <PackageTags>obfuscation;assistant;asylum;dot;net;extension;methods</PackageTags>
+        
+        <Authors>tacosontitan</Authors>
+        <Copyright>Copyright © 2024 tacosontitan and contibutors</Copyright>
+        <PackageProjectUrl>https://github.com/tacosontitan/Asylum.Net</PackageProjectUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReleaseNotesFile>resources/docs/RELEASE_NOTES.md</PackageReleaseNotesFile>
+
+        <IncludeSymbols>True</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+        
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/tacosontitan/Asylum.Net</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\..\LICENSE">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+            <Link>.resources\LICENSE</Link>
+        </None>
+        <None Include="..\..\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+            <Link>.resources\docs\README.md</Link>
+        </None>
+        <None Include="..\..\resources\docs\RELEASE_NOTES.md">
+            <Pack>False</Pack>
+            <Link>.resources\docs\RELEASE_NOTES.md</Link>
+        </None>
+    </ItemGroup>
+
+</Project>
