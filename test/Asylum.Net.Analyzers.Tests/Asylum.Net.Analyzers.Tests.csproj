@@ -8,9 +8,9 @@
         <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Analyzer.Testing.XUnit" Version="1.1.1"/>
         <PackageReference Include="Microsoft.CodeAnalysis.CSharp.CodeFix.Testing.XUnit" Version="1.1.1"/>
     </ItemGroup>
-
+    
     <ItemGroup>
-        <ProjectReference Include="..\Asylum.Net.Analyzers\Asylum.Net.Analyzers.csproj"/>
+      <ProjectReference Include="..\..\src\Asylum.Net.Analyzers\Asylum.Net.Analyzers.csproj" />
     </ItemGroup>
 
 </Project>

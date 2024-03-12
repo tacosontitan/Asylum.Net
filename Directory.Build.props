@@ -2,8 +2,10 @@
 
     <PropertyGroup Label="General Project Details">
         <TargetFrameworks>
-            netstandard2.0;
-            netstandard2.1;
+            net4.8;
+            net6.0;
+            net7.0;
+            net8.0;
         </TargetFrameworks>
         
         <Nullable>enable</Nullable>
@@ -42,14 +44,7 @@
         <PackageReference Include="PolySharp" Version="1.14.1"/>
     </ItemGroup>
     
-    <PropertyGroup Label="Testing Details" Condition="'$(IsTestProject)' == 'true'">
-        <TargetFrameworks>
-            net4.8;
-            net6.0;
-            net7.0;
-            net8.0;
-        </TargetFrameworks>
-
+    <PropertyGroup Label="Testing Details" Condition="'$(IsTestProject)' == 'True'">
         <NoWarn>
             CS1591; <!-- Missing XML comments for publicly visible type or member -->
         </NoWarn>
