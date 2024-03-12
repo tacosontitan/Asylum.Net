@@ -2,11 +2,10 @@
 
     <PropertyGroup Label="General Project Details">
         <TargetFrameworks>
-            net4.8;
-            net6.0;
-            net7.0;
-            net8.0;
+            netstandard2.0;
+            netstandard2.1;
         </TargetFrameworks>
+        
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
         <ImplicitUsings>true</ImplicitUsings>
@@ -39,7 +38,7 @@
         <RepositoryUrl>https://github.com/tacosontitan/Asylum.Net</RepositoryUrl>
     </PropertyGroup>
 
-    <ItemGroup>
+    <ItemGroup Label="Core Resources">
         <None Include="..\..\LICENSE">
             <Pack>True</Pack>
             <PackagePath>\</PackagePath>
@@ -54,6 +53,35 @@
             <Pack>False</Pack>
             <Link>.resources\docs\RELEASE_NOTES.md</Link>
         </None>
+    </ItemGroup>
+    
+    <ItemGroup Label="Package References">
+        <PackageReference Include="PolySharp" Version="1.14.1"/>
+    </ItemGroup>
+    
+    <PropertyGroup Label="Testing Details" Condition="'$(IsTestProject)' == 'true'">
+        <TargetFrameworks>
+            net4.8;
+            net6.0;
+            net7.0;
+            net8.0;
+        </TargetFrameworks>
+
+        <NoWarn>
+            CS1591; <!-- Missing XML comments for publicly visible type or member -->
+        </NoWarn>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    </PropertyGroup>
+    
+    <ItemGroup Label="Testing References" Condition="'$(IsTestProject)' == 'true'" >
+        <PackageReference Include="xunit" Version="2.5.3"/>
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"/>
+        <PackageReference Include="coverlet.collector" Version="6.0.0"/>
+
+        <Using Include="Xunit"/>
     </ItemGroup>
 
 </Project>
