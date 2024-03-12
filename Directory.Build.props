@@ -19,7 +19,7 @@
     </PropertyGroup>
 
     <PropertyGroup Label="Package Details">
-        <Description>A lightweight rescue plan for those impacted by the common pains of obfsucation.</Description>
+        <Description>A lightweight rescue plan for those impacted by the common pains of obfuscation.</Description>
         <PackageTags>obfuscation;assistant;asylum;dot;net;extension;methods</PackageTags>
         
         <Authors>tacosontitan</Authors>
