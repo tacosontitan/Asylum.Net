@@ -28,7 +28,6 @@
         <PackageProjectUrl>https://github.com/tacosontitan/Asylum.Net</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
-        <PackageReleaseNotesFile>resources/docs/RELEASE_NOTES.md</PackageReleaseNotesFile>
 
         <IncludeSymbols>True</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
@@ -41,8 +40,8 @@
     </PropertyGroup>
     
     <ItemGroup Label="Package References">
-        <PackageReference Include="PolySharp" Version="1.14.1"/>
-        <PackageReference Include="JetBrains.Annotations" Version="2023.3.0"/>
+        <PackageReference Include="PolySharp" Version="1.14.1" PrivateAssets="All" />
+        <PackageReference Include="JetBrains.Annotations" Version="2023.3.0" PrivateAssets="All" />
     </ItemGroup>
 
     <ItemGroup Label="Testing References" Condition="'$(IsTestProject)' == 'true'" >
