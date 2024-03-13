@@ -35,8 +35,8 @@ We believe in keeping the community informed, so here's a few more tidbits of in
 The initial release contains very basic features for identifying obfuscated members in a .NET ecosystem. Consumers can utilize the `RuntimeIdentifierAttribute` to help identify obfuscated members at runtime:
 
 ```csharp
-[Obfuscation(Feature = "virtualization", Exclude = false)]
 [RuntimeIdentifier(nameof(Sample))]
+[Obfuscation(Feature = "virtualization", Exclude = false)]
 public sealed class Sample;
 ```
 
