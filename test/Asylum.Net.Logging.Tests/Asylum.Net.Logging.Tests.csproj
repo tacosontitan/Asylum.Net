@@ -2,6 +2,11 @@
 
     <PropertyGroup>
         <IsTestProject>true</IsTestProject>
+        <IsPackable>false</IsPackable>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <NoWarn>
+            CS1591; <!-- Missing XML comments for publicly visible type or member -->
+        </NoWarn>
     </PropertyGroup>
     
     <ItemGroup>
