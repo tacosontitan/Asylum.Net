@@ -29,3 +29,27 @@ We believe in keeping the community informed, so here's a few more tidbits of in
 ![Stars](https://img.shields.io/github/stars/tacosontitan/Asylum.Net?logo=github&style=for-the-badge)
 ![Size](https://img.shields.io/github/languages/code-size/tacosontitan/Asylum.Net?logo=github&style=for-the-badge)
 ![Line Count](https://img.shields.io/tokei/lines/github/tacosontitan/Asylum.Net?logo=github&style=for-the-badge)
+
+## ✨ Features
+
+The initial release contains very basic features for identifying obfuscated members in a .NET ecosystem. Consumers can utilize the `RuntimeIdentifierAttribute` to help identify obfuscated members at runtime:
+
+```csharp
+[Obfuscation(Feature = "virtualization", Exclude = false)]
+[RuntimeIdentifier(nameof(Sample))]
+public sealed class Sample;
+```
+
+Members can be identified with this attribute using natural means or through an extension method `GetName`:
+
+```csharp
+var typeName = typeof(Sample).GetName();
+```
+
+Additionally, if you just need to know if a member is marked with the obfuscation attribute, you can use the extension `IsObfuscated` for `MemberInfo` to determine just that:
+
+```cs
+var type = typeof(Sample);
+if (type.IsObfuscated())
+    Console.WriteLine("What have I done?");
+```
