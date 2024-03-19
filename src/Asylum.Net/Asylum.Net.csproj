@@ -1,7 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <PackageVersion>1.0.0-preview-1</PackageVersion>
+        <PackageReleaseNotes>https://github.com/tacosontitan/Asylum.Net/wiki/Asylum.Net</PackageReleaseNotes>
     </PropertyGroup>
 
 </Project>

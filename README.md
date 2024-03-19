@@ -25,10 +25,10 @@ The initial release contains very basic features for identifying obfuscated memb
 public sealed class Sample;
 ```
 
-Members can be identified with this attribute using natural means or through an extension method `GetName`:
+Members can be identified with this attribute using natural means or through an extension method `GetRuntimeIdentifier`:
 
 ```csharp
-var typeName = typeof(Sample).GetName();
+var typeName = typeof(Sample).GetRuntimeIdentifier();
 ```
 
 Additionally, if you just need to know if a member is marked with the obfuscation attribute, you can use the extension `IsObfuscated` for `MemberInfo` to determine just that:
