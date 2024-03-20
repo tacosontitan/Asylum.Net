@@ -26,6 +26,7 @@
         <Authors>tacosontitan</Authors>
         <Copyright>Copyright © 2024 tacosontitan and contibutors</Copyright>
         <PackageProjectUrl>https://github.com/tacosontitan/Asylum.Net</PackageProjectUrl>
+        <PackageIconUrl>https://raw.githubusercontent.com/tacosontitan/Asylum.Net/main/resources/textures/icon.png</PackageIconUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
 
