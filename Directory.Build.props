@@ -26,7 +26,7 @@
         <Authors>tacosontitan</Authors>
         <Copyright>Copyright © 2024 tacosontitan and contibutors</Copyright>
         <PackageProjectUrl>https://github.com/tacosontitan/Asylum.Net</PackageProjectUrl>
-        <PackageIconUrl>https://raw.githubusercontent.com/tacosontitan/Asylum.Net/main/resources/textures/icon.png</PackageIconUrl>
+        <PackageIcon>icon.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
 
@@ -57,6 +57,10 @@
     </ItemGroup>
 
     <ItemGroup Label="Core Resources">
+        <None Include="..\..\resources\textures\icon.png" Link=".resources\textures\icon.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
         <None Include="..\..\README.md" Link=".resources\README.md">
             <Pack>True</Pack>
             <PackagePath>\</PackagePath>
